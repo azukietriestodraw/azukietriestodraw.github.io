@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Slideshow */
+#slideshow {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Section */
+#about {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 20px;
+  text-align: center; /* Add this line to center the heading */
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 20px;
+}
+
+.artwork-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 70%; /* Adjust the width value as desired */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.artwork {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+
+.artwork img {
+  max-width: 50%;
+  height: auto;
+}
+
+.artwork h3 {
+  margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.contact-form .form-row {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Azukietriestodraw.web</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Slideshow Styles */
+    .slide {
+      display: none;
+    }
+
+    /* Social Media Section Styles */
+    .social-media-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-media-container a {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    /* Portfolio Section Styles */
+    .artwork-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .artwork {
+      width: 48%;
+      max-width: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .artwork img {
+      width: 130%;
+      height: auto;
+    }
+  </style>
+  <script>
+    // Slideshow JavaScript
+    document.addEventListener("DOMContentLoaded", function() {
+      var slides = document.querySelectorAll(".slide");
+      var slideIndex = 0;
+
+      function showSlide() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlide, 2000); // Change slide every 2 seconds
+      }
+
+      showSlide();
+    });
+  </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="slideshow">
+    <div class="slideshow-container">     
+      <div class="slide">
+        <img src="webfront3.jpg" alt="Slideshow 2">
+      </div>
+      <div class="slide">
+        <img src="webfront4.png" alt="Slideshow 3">
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <h1>Azukietriestodraw</h1>
+     <p>Heeyaaahh!! thank you so much for visting my website, i know my website doesnt look fancy but i am really proud of it.</p>
+  <p>This is just a simple web portfolio consisting some of my artworks from instagram that somehow gotten alot of love from peoples </p>
+  <p>I hope you enjoy browsing through my artwork even though this is literally one page ehe.. anyway thank you so much for visting and i hope you like my works.</p>
+  
+  </header>
+
+  <section id="about">
+    <h2>About the Artist</h2>
+    <p>I am Azukie also well known as azukietriestodraw on instagram AKA .. well you already know me i don't wanna reveal my real name here hehe, anyway i am a BSEMC-DAT student in BISCAST i am somewhat self proclaim artist and also an aspiring Manga Artist and Animator. I hope you'll join me as i embark my journey of being a professional artist 0w0</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="artwork-container">
+      <div class="artwork">
+        <img src="pic1.png" alt="Artwork 1">
+      </div>
+      <div class="artwork">
+        <img src="pic2.png" alt="Artwork 2">
+      </div>
+      <div class="artwork">
+        <img src="pic3.png" alt="Artwork 3">
+      </div>
+      <div class="artwork">
+        <img src="pic4.png" alt="Artwork 4">
+      </div>
+      <div class="artwork">
+        <img src="pic5.png" alt="Artwork 5">
+      </div>
+      <div class="artwork">
+        <img src="pic6.png" alt="Artwork 6">
+      </div>
+      <div class="artwork">
+        <img src="pic7.png" alt="Artwork 7">
+      </div>
+      <div class="artwork">
+        <img src="pic9.jpg" alt="Artwork 8">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <div class="form-row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Social Media Section -->
+  <section id="social-media">
+    <div class="social-media-container">
+      <a href="https://www.instagram.com/azukietriestodraw/?hl=en" target="_blank" rel="noopener noreferrer">
+        <img src="instagramlogo.png" alt="Instagram" width="50" height="50">
+      </a>
+      <a href="mailto:your-email@gmail.com">
+        <img src="gmaillogo.png" alt="Gmail" width="50" height="50">
+      </a>
+      <a href="https://twitter.com/Azukieisdrawin" target="_blank" rel="noopener noreferrer">
+        <img src="twitterlogo.png" alt="Twitter" width="50" height="50">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <img src="facebooklogo.png" alt="Facebook" width="50" height="50">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Azukietriestodraw. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
